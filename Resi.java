@@ -27,7 +27,9 @@ public class Resi{
             //using arraylist because of .contains method, much cleaner code than
             //for loop to search for ingrediends
             
-            for(int j = 0; j < num; j++) tmp.add(read.next());
+            for(int j = 0; j < num; j++) 
+                tmp.add(read.next());
+                
             pizzas.add(new Pizza(tmp));
         }
 
