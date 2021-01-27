@@ -3,12 +3,10 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 class Pizza{
-    int numberOfIngredients;
     ArrayList<String> ingrediends;
     boolean delivered = false;
 
-    Pizza(int x, ArrayList<String> s){
-        this.numberOfIngredients = x;
+    Pizza(ArrayList<String> s){
         ingrediends = new ArrayList<String>(s);
     }
 }
@@ -30,7 +28,7 @@ public class Resi{
             //for loop to search for ingrediends
             
             for(int j = 0; j < num; j++) tmp.add(read.next());
-            pizzas.add(new Pizza(num, tmp));
+            pizzas.add(new Pizza(tmp));
         }
 
         solve(pizzas, teamsOfTwo, teamsOfThree, teamsOfFour);
